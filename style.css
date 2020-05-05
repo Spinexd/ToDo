@@ -11,6 +11,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 header {
     font-size: 1.5rem;
 }
@@ -60,6 +62,7 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     transition: all 0.5 ease;
+    
 
 }
 
@@ -82,6 +85,7 @@ form button:hover {
 
 .todo-item {
     padding: 0rem 0.5rem;
+    
 }
 
 .fa-trash, .fa-check {
@@ -105,8 +109,13 @@ select{
 
 .select {
     margin: 0.5rem;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    display: flex;
+    margin-top: 4rem;
+    
+    
+
 }
 
 select {
@@ -114,6 +123,8 @@ select {
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
+    display: flex;
+    
 }
 
 .select::after {
@@ -132,18 +143,21 @@ select {
     color:  #85bdfd;
 }
 
- .menu  {
+ .menuClick  {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: white;
 }
 
- .menu {
+ .menuClick {
     color:  #85bdfd;
     background: white;
     cursor: pointer; 
     transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
  .menu:hover {
@@ -151,11 +165,27 @@ select {
     color: white;
 }
 
-.menuButton {
+.menu-Button {
     min-height: 20vh;
     position: absolute;
     top:  0;
     left: 0;
+    
+    
       
+}
+
+.menu-Container {
+    border: 5px solid white;
+    height: 100%;
+    width: 15rem;
+    background-image: linear-gradient(120deg,#31049b, #85bdfd);
+    position: absolute;
+    top:3em;
+    left:0;
+    display: none;
+    
+    
+    
 }
 

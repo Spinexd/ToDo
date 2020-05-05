@@ -4,15 +4,27 @@ const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
+const menuButton = document.querySelector('.menuClick');
+
 
 
 //event listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
-
+menuButton.addEventListener('click', openMenu);
 
 //functions
+ 
+function openMenu(){
+    const menuContainer = document.querySelector('.menu-Container');
+    if (menuContainer.style.display === 'none') {
+        menuContainer.style.display = 'block';
+        } else {
+            menuContainer.style.display= 'none';
+        }
+}
+
 
 function addTodo(event){
     //Prevent form submit
